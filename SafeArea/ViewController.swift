@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //Example#1: experiment on Layout Anchors
-        
+        /*
         let guide = UILayoutGuide()
         guide.identifier = "layoutguide"
         guide.owningView?.backgroundColor = .yellow
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         
         greenView.trailingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
         redview.leadingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
-        
+        */
         
         //Example#2: Showing spacing b/w buttons using bottom layout guide which is deprecated
         /*
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
         
         
         //Example# 4 (SAFE AREA INTRO iOS11)
-        /*
+        
         let greenView = UIView()
         greenView.backgroundColor = .green
         greenView.translatesAutoresizingMaskIntoConstraints = false
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
             greenView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: standardSpacing).isActive = true
             self.bottomLayoutGuide.topAnchor.constraint(equalTo: greenView.bottomAnchor, constant: standardSpacing).isActive = true
         }
-        */
+        
     }
     
     //rendering border on guide to show it visible on screen
